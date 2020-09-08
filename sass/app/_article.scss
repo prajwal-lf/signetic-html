@@ -1,6 +1,8 @@
 .article {
     &__section {
         padding: 70px 0 100px;
+        position: relative;
+        z-index: 1;
         .featured__content {
             display: flex;
             flex-direction: column;

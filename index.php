@@ -1,133 +1,137 @@
 <?php include('header.php'); ?>
-<section class="hero__section hero__home">
-    <div class="container">
-        <div class="hero__content">
-            <h1 class="hero__title">
-                Build Your<br />
-                Digital Future.
-            </h1>
-            <p class="hero__text">
-                Business process defines a company's capability.
-                Transform your processes to capture, learn, and take
-                action on digital infrastructure.
-            </p>
-        </div>
-        <div class="hero__article card card__horizontal">
-            <img src="images/hero-article.jpg" alt="Recent Project" />
-            <div class="card__content">
-                <span class="card__subtitle">Recent Project</span>
-                <div class="card__text">
-                    Empowering non-profit agencies with Power
-                    Platform to help those in need.
-                </div>
-                <a href="hopelink-case-study" class="card__action btn btn__arrow__long"><span>Learn More</span>
-                    <i class="icon icon-arrow-long-right"></i></a>
+<div class="curve-container">
+    <section class="hero__section hero__home">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    Build Your<br />
+                    Digital Future.
+                </h1>
+                <p class="hero__text">
+                    Business process defines a company's capability.
+                    Transform your processes to capture, learn, and take
+                    action on digital infrastructure.
+                </p>
             </div>
-        </div>
-    </div>
-    <div class="curve-top">
-        <img src="images/curve-top.svg" alt="Curve Top">
-    </div>
-</section>
-<section class="article__section">
-    <div class="container">
-        <div class="article__content">
-            <div class="article__featured article__item">
-                <a href="digital-transformation">
-                    <div class="row">
-                        <div class="col-6-md">
-                            <img src="../images/digital-transformation.jpg" alt="Digital Transformation" />
-                        </div>
-                        <div class="col-6-md featured__content">
-                            <h5 class="article__title">
-                                Digital Transformation
-                            </h5>
-                            <p class="article__text">
-                                Digital Transformation is about
-                                positioning your company around
-                                data-driven decision-making. Gain
-                                insights faster, adapt more
-                                proactively, and align around a
-                                common goal. Are you and your
-                                organization leading or are you
-                                catching up?
-                            </p>
-                            <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
-                                <span>Learn More</span>
-                                <i class="icon icon-arrow-long-right"></i>
-                            </div>
-                        </div>
+            <div class="hero__article card card__horizontal">
+                <img src="images/hero-article.jpg" alt="Recent Project" />
+                <div class="card__content">
+                    <span class="card__subtitle">Recent Project</span>
+                    <div class="card__text">
+                        Empowering non-profit agencies with Power
+                        Platform to help those in need.
                     </div>
-                </a>
-            </div>
-            <div class="article__list">
-                <div class="row">
-                    <div class="col-4-md article__item">
-                        <a href="javascript:void(0);">
-                            <h5 class="article__title">
-                                Power Platform vs other platforms
-                            </h5>
-                            <p>
-                                Signetic builds with Microsoft’s
-                                Power Platform. For a digital world,
-                                it is a single platform that offers
-                                full customizability of business
-                                applications but the core building
-                                blocks are accessible for...
-                            </p>
-                            <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
-                                <span>Learn More</span>
-                                <i class="icon icon-arrow-long-right"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-4-md article__item">
-                        <a href="javascript:void(0);">
-                            <h5 class="article__title">
-                                What business Apps are right for
-                                you?
-                            </h5>
-                            <p>
-                                Signetic builds with Microsoft’s
-                                Power Platform. For a digital world,
-                                it is a single platform that offers
-                                full customizability.
-                            </p>
-                            <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
-                                <span>Learn More</span>
-                                <i class="icon icon-arrow-long-right"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-4-md article__item">
-                        <a href="javascript:void(0);">
-                            <h5 class="article__title">
-                                Remain agile, even as a large
-                                organization
-                            </h5>
-                            <p>
-                                Signetic builds with Microsoft’s
-                                Power Platform. For a digital world,
-                                it is a single platform that offers
-                                full customizability of business
-                                applications but the core building
-                                blocks are accessible for...
-                            </p>
-                            <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
-                                <span>Learn More</span>
-                                <i class="icon icon-arrow-long-right"></i>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="view-all text-right">
-                    <a href="javascript:void(0);" class="card__action btn btn__arrow__long"><span>View All Articles</span>
+                    <a href="hopelink-case-study" class="card__action btn btn__arrow__long"><span>Learn More</span>
                         <i class="icon icon-arrow-long-right"></i></a>
                 </div>
             </div>
         </div>
+    </section>
+    <section class="article__section">
+        <div class="container">
+            <div class="article__content">
+                <div class="article__featured article__item">
+                    <a href="digital-transformation">
+                        <div class="row">
+                            <div class="col-6-md">
+                                <img src="../images/digital-transformation.jpg" alt="Digital Transformation" />
+                            </div>
+                            <div class="col-6-md featured__content">
+                                <h5 class="article__title">
+                                    Digital Transformation
+                                </h5>
+                                <p class="article__text">
+                                    Digital Transformation is about
+                                    positioning your company around
+                                    data-driven decision-making. Gain
+                                    insights faster, adapt more
+                                    proactively, and align around a
+                                    common goal. Are you and your
+                                    organization leading or are you
+                                    catching up?
+                                </p>
+                                <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
+                                    <span>Learn More</span>
+                                    <i class="icon icon-arrow-long-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="article__list">
+                    <div class="row">
+                        <div class="col-4-md article__item">
+                            <a href="javascript:void(0);">
+                                <h5 class="article__title">
+                                    Power Platform vs other platforms
+                                </h5>
+                                <p>
+                                    Signetic builds with Microsoft’s
+                                    Power Platform. For a digital world,
+                                    it is a single platform that offers
+                                    full customizability of business
+                                    applications but the core building
+                                    blocks are accessible for...
+                                </p>
+                                <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
+                                    <span>Learn More</span>
+                                    <i class="icon icon-arrow-long-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4-md article__item">
+                            <a href="javascript:void(0);">
+                                <h5 class="article__title">
+                                    What business Apps are right for
+                                    you?
+                                </h5>
+                                <p>
+                                    Signetic builds with Microsoft’s
+                                    Power Platform. For a digital world,
+                                    it is a single platform that offers
+                                    full customizability.
+                                </p>
+                                <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
+                                    <span>Learn More</span>
+                                    <i class="icon icon-arrow-long-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-4-md article__item">
+                            <a href="javascript:void(0);">
+                                <h5 class="article__title">
+                                    Remain agile, even as a large
+                                    organization
+                                </h5>
+                                <p>
+                                    Signetic builds with Microsoft’s
+                                    Power Platform. For a digital world,
+                                    it is a single platform that offers
+                                    full customizability of business
+                                    applications but the core building
+                                    blocks are accessible for...
+                                </p>
+                                <div class="card__action btn btn__arrow__long justify-content-start btn__phone">
+                                    <span>Learn More</span>
+                                    <i class="icon icon-arrow-long-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="view-all text-right">
+                        <a href="javascript:void(0);" class="card__action btn btn__arrow__long"><span class="bg-light">View All Articles</span>
+                            <i class="icon icon-arrow-long-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <div class="curve-top">
+        <img src="images/curve-top.svg" alt="Curve Top">
     </div>
-</section>
+</div>
 <section class="services__section bg-light">
     <div class="container">
         <h2 class="section__title">

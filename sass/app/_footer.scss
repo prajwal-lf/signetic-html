@@ -2,6 +2,8 @@
     color: $grey-80;
     font-weight: 500;
     padding: 90px 0 70px;
+    position: relative;
+    z-index: 1;
     &__top {
         padding-bottom: 28px;
         border-bottom: 2px solid $grey-40;

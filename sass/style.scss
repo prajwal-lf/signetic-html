@@ -20,11 +20,3 @@
 @import "libs/index";
 @import "app/index";
 @import "shame";
-
-
-.curve-top {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-}

@@ -15,6 +15,30 @@
         color: $white;
     }
 }
+.curve-container {
+    position: relative;
+    overflow: hidden;
+}
+.curve {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2400px;
+    z-index: 0;
+}
+.curve-bottom {
+    @extend .curve;
+    top: 270px;
+}
+
+.curve-top {
+    @extend .curve;
+    top: 285px;
+}
+.curve-about {
+    @extend .curve;
+    top: 600px;
+}
 .highlight {
     background-color: transparentize($color: $secondary-color, $amount: 0.2);
 }

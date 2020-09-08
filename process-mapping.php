@@ -34,6 +34,4 @@
             </article>
         </div>
     </section>
-    <?php include('header.php'); ?>
-
-    </html>
+    <?php include('footer.php'); ?>
