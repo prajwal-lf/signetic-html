@@ -1,0 +1,38 @@
+.resource {
+    &__section {
+        padding: 128px 0 110px;
+        .section__subtitle {
+            max-width: 996px;
+            a {
+                color: $text-light;
+                text-decoration: underline;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    &__item {
+        padding: 20px 15px;
+    }
+    &__category {
+        font-size: 11px;
+        color: $primary-color;
+        display: inline-block;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &__item {
+        p {
+            font-weight: 500;
+            margin-bottom: 20px;
+            line-height: 140%;
+        }
+    }
+}

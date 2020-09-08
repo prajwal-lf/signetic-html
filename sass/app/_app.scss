@@ -1,0 +1,192 @@
+.bg-light {
+    background-color: $grey-40 !important;
+}
+.bg-medium {
+    background-color: $grey-70 !important;
+    color: $white;
+    .title {
+        color: $white !important;
+    }
+}
+.bg-dark {
+    background-color: $grey-80;
+    color: $white;
+    .section__title {
+        color: $white;
+    }
+}
+.highlight {
+    background-color: transparentize($color: $secondary-color, $amount: 0.2);
+}
+.blocker {
+    z-index: 8010 !important;
+}
+blockquote {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-left: 16px;
+    span {
+        display: inline-block;
+        font-size: 18px;
+        color: $grey-70;
+        font-weight: 500;
+    }
+    &:before {
+        content: "";
+        display: inline-block;
+        background: url("../images/quote.svg") no-repeat center center / contain;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top: -45px;
+        left: -30px;
+    }
+}
+.title {
+    position: relative;
+    .icon {
+        font-size: 27px;
+        background: $grey-40;
+        height: 52px;
+        width: 52px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        left: -84px;
+        top: -10px;
+        color: $error-color;
+    }
+}
+.ul-tick {
+    list-style-type: none;
+    ul {
+        list-style-type: none;
+        margin-bottom: 0;
+    }
+    li {
+        position: relative;
+        &:before {
+            position: absolute;
+            left: -20px;
+            top: -2px;
+            content: url("../images/icon/tick.svg");
+        }
+        li {
+            &:before {
+                content: url("../images/icon/tick-gray.svg");
+            }
+        }
+    }
+}
+[class*="title"]:not([class*="subtitle"]) {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section {
+    &__padding {
+        padding: 130px 0 140px;
+    }
+    &__title {
+        font-size: 58px;
+        color: $grey-70;
+        text-align: center;
+        line-height: 90%;
+        margin-bottom: 32px;
+        span {
+            position: relative;
+            display: inline-block;
+            padding: 14px 20px;
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                display: inline-block;
+                top: 0;
+                height: 85px;
+                width: 13px;
+            }
+            &:before {
+                background: url("../images/bracket-left.svg") no-repeat center
+                    center / contain;
+                left: 0;
+            }
+            &:after {
+                background: url("../images/bracket-right.svg") no-repeat center
+                    center / contain;
+                right: 0;
+            }
+        }
+    }
+    &__subtitle {
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+}
+
+.owl {
+    &-nav {
+        position: initial !important;
+        text-align: center;
+        button {
+            height: 52px;
+            width: 52px;
+            background-color: $primary-color !important;
+            color: $white !important;
+            border: 0;
+            border-radius: 50%;
+            color: $text-light;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            transition: $transition;
+            &:hover {
+                background-color: $primary-color-dark !important;
+            }
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@keyframes slide {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container,
+    .container-fluid {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .section {
+        &__title {
+            font-size: 24px;
+            line-height: 110%;
+            span {
+                &:before,
+                &:after {
+                    height: 37px;
+                    width: 8px;
+                    top: 8px;
+                }
+            }
+        }
+        &__subtitle {
+            font-size: 18px;
+        }
+    }
+}

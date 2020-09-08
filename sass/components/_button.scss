@@ -1,0 +1,89 @@
+.btn{
+    color: $primary-color;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    transition: $transition;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 110%;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: $font-condensed;
+    &__arrow__long {
+        display: inline-flex;
+        justify-content: flex-end;
+        align-items: center;
+        span {
+            background: white;
+            position: relative;
+            padding-right: 10px;
+            z-index: 2;
+        }
+        .icon { 
+            font-size: 55px;
+            line-height: 0;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            transition: $transition;
+        }
+        &:hover {
+            .icon {
+                transform: translateX(-15px);
+            }
+        }
+    }
+    &-block {
+        width: 100%;
+    }
+    &-primary {
+        background-color: $primary-color;
+        color: $white;
+        padding: 10px 60px;
+        font-size: 24px;
+        &:hover {
+            background-color: $primary-color-dark;
+            color: $white 
+        }
+        &-outline {
+            background-color: $white;
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            &:hover {
+                background-color: $primary-color;
+                color: $white;
+            }
+        }
+    }
+    &-secondary {
+        padding: 10px 60px;
+        background-color: $grey-40;
+        color: $primary-color;
+        &:hover {
+            background-color: $primary-color;
+            color: $white
+        }
+    }
+    &-outline {
+        background-color: transparent;
+        color: $white;
+        border: 1px solid $white;
+        &:hover {
+            background-color: $primary-color;
+            color: $white;
+            border: 1px solid $primary-color;
+        }
+    }
+    &__phone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .btn__phone {
+        display: inline-flex;
+        margin-top: 10px;
+    }
+}

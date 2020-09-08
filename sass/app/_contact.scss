@@ -1,0 +1,85 @@
+.contact {
+    &__section{
+        position: relative;
+        padding: 46px 0 80px;
+        &:before {
+            content: '';
+            background: #f1f1f1;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 50%;
+            display: inline-block;
+            z-index: -1;
+        }
+    }
+    &__content {
+        display: flex;
+        form {
+            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+            padding: 70px 75px 60px 50px;
+        }
+    }
+    &__form {
+        width: 65%;
+        padding: 58px 0 ;
+    }
+}
+
+.modal {
+    border-radius: 0;
+    a.close-modal {
+        background-image: url('../images/icon/cross.svg');
+        top: 28px;
+        right: 28px;
+    }
+}
+
+#reach-out-modal {
+    max-width: 700px;
+    padding: 80px 40px 55px;
+}
+
+@media screen and (max-width: 576px) {
+    .contact {
+        &__section {
+            padding: 0;
+        }
+        &__img {
+            display: none;
+        }
+        &__form {
+            width: 100%;
+            padding: 0;
+        }
+    }
+    .form__styled {
+        .form {
+            &__title {
+                font-size: 24px;       
+            }
+        }
+        form {
+            padding: 100px 24px 30px;
+            font-size: 16px;
+            .btn-submit {
+                width: 100%;
+            }
+        }
+        input {
+            &#fullName {
+                max-width: 69%;
+            }
+            &#address {
+                max-width: 75%;
+            }
+            &#email {
+                max-width: 46%;
+            }
+        }
+    }
+    #reach-out-modal {
+        padding: 0;
+    }
+}

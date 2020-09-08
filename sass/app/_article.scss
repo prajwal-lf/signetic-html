@@ -1,0 +1,117 @@
+.article {
+    &__section {
+        padding: 70px 0 100px;
+        .featured__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+    &__featured.article__item {
+        margin-bottom: 0;
+        a:hover {
+            border-color: transparent !important;
+        }
+    }
+    &__item {
+        margin-bottom: 60px;
+        color: $grey-80;
+        &:hover {
+            color: $grey-80;
+            .article__title {
+                color: $primary-color;
+            }
+            .btn {
+                .icon {
+                    transform: translateX(-15px);
+                }
+            }
+        }
+        a:not(.btn){
+            border-bottom: 4px solid transparent;
+            color: $grey-90;
+            transition: $transition;
+            display: block;
+            height: 100%;
+            &:hover {
+                border-bottom: 4px solid $primary-color;
+                .article__title {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    &__list {
+        padding-top: 100px;
+        > row {
+            justify-content: space-between;
+        }
+        .article__item {
+            max-width: 372px;
+        }
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 110%;
+        color: $grey-80;
+        transition: $transition;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 135%;
+        font-weight: 500;
+    }
+}
+
+article.blog__content {
+    margin: 60px 0 100px;
+    h2 {
+        font-size: 36px;
+        color: $grey-80;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 100%;
+        margin: 60px 0 30px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    img {
+        display: block;
+        margin: 30px auto 60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .article {
+        &__section {
+            padding: 150px 0 50px;
+        }
+        &__featured {
+            .article {
+                &__title {
+                    margin-top: 24px;
+                    font-size: 32px;
+                }
+            }
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__text {
+            font-size: 16px;
+        }
+        &__item {
+            font-size: 16px;
+            margin-bottom: 44px;
+        }
+        &__list {
+            padding-top: 44px;
+        }
+    }
+    article {
+        &.blog__content {
+            margin-bottom: 48px;
+        }
+    }
+}

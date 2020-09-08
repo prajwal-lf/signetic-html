@@ -1,0 +1,515 @@
+// page hero styles
+
+.hero__page {
+    height: 530px;
+    text-align: center;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: transparentize($color: #000000, $amount: 0.5);
+    }
+    &.hero__services {
+        background: url("../images/hero-services.jpg") no-repeat center
+            center/cover;
+    }
+    .hero {
+        &__text {
+            max-width: 100%;
+        }
+    }
+}
+
+// page services styles
+
+.services__page {
+    .services__content {
+        max-width: 100%;
+        .title {
+            text-align: center;
+            font-family: $font-condensed;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+        .card {
+            height: 100%;
+            &__subtitle {
+                text-transform: capitalize;
+            }
+            &__text {
+                font-weight: 600;
+                margin-bottom: 32px;
+            }
+            &__detail {
+                font-weight: 500;
+                font-size: 18px;
+                .example {
+                    margin-top: 30px;
+                    p {
+                        font-size: 14px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &__action {
+                margin: 34px 0 10px;
+            }
+        }
+    }
+    &:after {
+        height: 160px;
+    }
+}
+
+// about page styles
+.hero__about {
+    position: relative;
+    background: url("../images/hero-about.jpg") no-repeat center center / cover;
+    .hero__text {
+        max-width: 780px;
+        margin: auto;
+    }
+}
+.about {
+    &__section {
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 80px;
+            background-color: $grey-80;
+        }
+    }
+    &__content {
+        position: relative;
+        z-index: 1;
+        transform: translateY(-50px);
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 15px 55px;
+        .title {
+            font-size: 50px;
+            line-height: 90%;
+            color: $grey-70;
+            margin-bottom: 20px;
+        }
+    }
+    &__item {
+        &:nth-child(1) {
+            margin-bottom: 120px;
+            .about__text {
+                justify-content: flex-end;
+            }
+        }
+        &:nth-child(2) {
+            .about__text {
+                padding-left: 0;
+            }
+        }
+    }
+}
+.team {
+    &__section {
+        padding: 64px 0;
+    }
+    &__content {
+        > .row {
+            justify-content: center;
+            padding: 0 16px;
+            .col {
+                max-width: calc(100% / 5);
+                flex: 0 0 calc(100% / 5);
+            }
+        }
+    }
+    &__item {
+        text-align: center;
+        margin-bottom: 56px;
+        &:hover {
+            .team__img {
+                img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    &__img {
+        margin-bottom: 15px;
+        width: 100%;
+        overflow: hidden;
+        img {
+            transition: $transition;
+        }
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $font-primary;
+        margin: 0;
+        line-height: 135%;
+    }
+    &__role {
+        font-size: 12px;
+        color: $grey-60;
+        padding: 0 8%;
+    }
+}
+
+// learn page styles
+
+.hero__learn {
+    background: url("../images/hero-learn.jpg") no-repeat center center / cover;
+}
+.article__section__page {
+    position: relative;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        height: 320px;
+        background: $grey-40;
+    }
+    padding: 0;
+    .article__featured {
+        position: relative;
+        top: -40px;
+        z-index: 1;
+        .article__title {
+            font-size: 58px;
+        }
+    }
+    .article__list {
+        padding-top: 80px;
+        border-top: 1px solid $grey-50;
+    }
+}
+.featured__content__wrapper {
+    font-size: 18px;
+    font-weight: 500;
+    .article__item {
+        .article__title {
+            font-size: 50px;
+        }
+    }
+}
+
+// case study styles
+.case-study {
+    &__info {
+        padding: 20px;
+        position: relative;
+        z-index: 1;
+        top: -40px;
+        .meta {
+            &__title {
+                color: $grey-60;
+                font-family: $font-condensed;
+                margin-bottom: 4px;
+            }
+            &__text {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+    &__intro {
+        padding-bottom: 60px;
+    }
+    &__outcome {
+        padding: 100px 0;
+    }
+    &__testimony {
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: $grey-70;
+        }
+    }
+    &__content {
+        padding: 10px 0 100px;
+        .title {
+            font-size: 50px;
+            color: $grey-70;
+            margin: 20px 0 35px;
+        }
+        p {
+            margin-bottom: 30px;
+        }
+        img {
+            margin: 30px 0 50px;
+        }
+
+        .outcome {
+            &__item {
+                margin-bottom: 20px;
+                [class*="col"] {
+                    padding: 0 10px;
+                }
+                .card {
+                    &__content {
+                        padding: 28px 32px;
+                    }
+                }
+            }
+            &__title {
+                color: $grey-70;
+                margin: 0;
+                font-size: 24px;
+                font-family: $font-condensed;
+            }
+            &__text {
+                color: $grey-80;
+                margin: 0;
+            }
+
+        }
+    }
+}
+
+.title {
+    .icon {
+        &:after {
+            content: "";
+            width: 2px;
+            height: 135vh;
+            background-color: #f1f1f1;
+            position: absolute;
+            top: 50px;
+            z-index: -1;
+        }
+    }
+}
+.case-study__outcome {
+    .title .icon:after{
+        top: -120px;
+        height: 120px;
+        z-index: 1;
+    }
+}
+.testimony {
+    &__item {
+        display: flex;
+        padding: 40px 30px 40px 40px;
+        position: relative;
+        .quote {
+            width: 65px;
+            position: absolute;
+            top: -52px;
+            left: -12px;
+        }
+        .person {
+            margin: 0;
+            min-width: 100px;
+            max-width: 100px;
+        }
+    }
+    &__content {
+        padding-left: 20px;
+    }
+    &__name {
+        font-weight: bold;
+        color: $primary-color;
+        line-height: 100%;
+        margin-bottom: 5px !important;
+    }
+    &__role {
+        font-size: 12px;
+        color: $grey-70;
+        display: inline-block;
+    }
+    &__text {
+        font-size: 42px;
+        line-height: 110%;
+        margin-bottom: 10px !important;
+        color: $grey-70;
+        font-weight: bold;
+        margin-top: 10px;
+        text-transform: uppercase;
+        font-family: $font-condensed;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        &__page {
+            height: 627px;
+            padding-bottom: 48px;
+            text-align: left;
+            align-items: flex-end;
+            .hero__title {
+                line-height: 110%;
+            }
+        }
+    }
+    .services {
+        &__page {
+            padding-top: 48px;
+            .services__content {
+                .title {
+                    margin-bottom: 48px;
+                    line-height: 110%;
+                }
+                .card {
+                    height: auto;
+                    &__action {
+                        .btn {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &__build {
+            margin-bottom: 16px;
+        }
+    }
+
+    // about page styles
+    .hero__about {
+        padding-bottom: 96px;
+    }
+    .about {
+        &__section {
+            &:after {
+                content: none;
+            }
+        }
+        &__item {
+            &:nth-child(1) {
+                margin-bottom: 20px;
+                .row {
+                    flex-direction: column-reverse;
+                }
+                .about__text {
+                    padding: 15px 0;
+                }
+            }
+            &:nth-child(2) {
+                .about__text {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .team {
+        &__section {
+            padding: 48px 0;
+            .section__subtitle {
+                padding: 0 5px;
+            }
+        }
+        &__content {
+            > .row {
+                padding: 0;
+                .col {
+                    padding: 0 16px;
+                    max-width: 50%;
+                    flex: 0 0 50%;
+                }
+            }
+        }
+        &__name {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+    }
+
+    // case study styels
+
+    .case-study {
+        &__content {
+            padding-bottom: 72px;
+            .outcome {
+                &__title {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        &__info {
+            padding: 20px 20px 5px;
+            img {
+                width: 100%;
+            }
+        }
+        &__meta {
+            margin-top: 24px;
+        }
+    }
+    .testimony {
+        &__item {
+            padding: 24px;
+            flex-wrap: wrap;
+            .quote {
+                width: 36px;
+                top: -45px;
+            }
+            .person__img {
+                max-width: 64px;
+                flex: 0 0 64px;
+                img {
+                    max-width: 64px;
+                    min-width: auto;
+                }
+            }
+            .testimony__content {
+                max-width: 70%;
+                flex: 0 0 70%;
+                .testimony__text {
+                    display: none;
+                }
+            }
+            > .testimony__text {
+                display: block !important;
+                flex: 0 0 100%;
+                max-width: 100%;
+                font-size: 36px;
+            }
+        }
+    }
+
+    // learn page styles
+
+    .article__section {
+        &__page {
+            &:before {
+                height: 560px;
+            }
+            .article__list {
+                padding-top: 48px;
+            }
+        }
+    }
+
+    .featured__content__wrapper {
+        .article__item {
+            .card__action {
+                margin-top: 10px;
+            }
+            > .row {
+                flex-direction: column-reverse;
+            }
+            .article__title {
+                margin-top: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.form__styled {
+    .form__title {
+        font-size: 48px;
+        color: $grey-70;
+        line-height: 110%;
+        margin-bottom: 55px;
+        span {
+            position: relative;
+            display: inline-block;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 135px;
+                height: 26px;
+            }
+            &:before {
+                background: url("../images/bracket-up.svg") no-repeat center center / contain;
+                top: -30px;
+            }
+            &:after {
+                background: url("../images/bracket-down.svg") no-repeat center center / contain;
+                bottom: -30px;
+            }
+        }
+    }
+    form {
+        background-color: $white;
+        width: 100%;
+        color: $grey-80;
+        font-size: 22px;
+        font-weight: 600;
+        p {
+            margin-bottom: 14px;
+        }
+        .btn-submit {
+            margin-top: 32px;
+        }
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    input {
+        border: 0;
+        border-bottom: 1px solid $primary-color;
+        width: 100%;
+        padding: 0 5px;
+        color: $primary-color;
+        font-weight: 600;
+        &#fullName {
+            max-width: 493px;
+        }
+        &#address {
+            max-width: 511px;
+        }
+        &#email {
+            max-width: 396px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form__styled {
+        .form__title {
+            span {
+                &:before, &:after {
+                    width: 129px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+}

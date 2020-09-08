@@ -1,0 +1,119 @@
+.hire {
+    &__section {
+        background-color: #e1f7eb;
+        text-align: center;
+        overflow: hidden;
+        padding: 112px 0 68px;
+        .section__title {
+            max-width: unset;
+            font-weight: bold;
+            margin-bottom: 34px;
+            color: $primary-color;
+            position: relative;
+            z-index: 1;
+        }
+    }
+    &__wrapper {
+        width: 100%;
+        .btn__wrapper {
+            position: relative;
+            margin-top: 50px;
+            .btn__wave {
+                position: absolute;
+                border-radius: 50%;
+                border: 1px dashed #2ecc71;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+                transition: 0.5s cubic-bezier(0, 0.65, 0.22, 0.88);
+                &__1 {
+                    width: 250px;
+                    height: 250px;
+                }
+                &__2 {
+                    width: 500px;
+                    height: 500px;
+                    transition-delay: 0.05s;
+                }
+                &__3 {
+                    width: 750px;
+                    height: 750px;
+                    transition-delay: 0.1s;
+                }
+            }
+        }
+    }
+    &__form {
+        font-size: 24px;
+        color: $secondary-color;
+        font-weight: 500;
+        > span {
+            position: relative;
+            z-index: 1;
+        }
+        select {
+            border: 0;
+            border-bottom: 5px solid $primary-color;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: transparent;
+            font-weight: bold;
+            color: $secondary-color;
+            position: relative;
+            z-index: 1;
+        }
+        .select__icon {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .btn {
+            font-size: 28px;
+            padding: 17px 18px 14px;
+            height: 63px;
+            width: 63px;
+            position: relative;
+            z-index: 1;
+            &:hover {
+                + .wave__wrapper {
+                    .btn__wave {
+                        &__1 {
+                            height: 270px;
+                            width: 270px;
+                        }
+                        &__2 {
+                            height: 550px;
+                            width: 550px;
+                        }
+                        &__3 {
+                            height: 800px;
+                            width: 800px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hire {
+        &__form {
+            font-size: 18px;
+            .select__icon {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .hire {
+        &__form {
+            font-size: 16px;
+            .select__icon {
+                font-size: 12px;
+            }
+        }
+    }
+}

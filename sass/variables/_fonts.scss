@@ -1,0 +1,260 @@
+
+// fonticon from icomoon
+@font-face {
+  font-family: 'LFT';
+  src:  url('../../fonts/LFT.eot?r8og1l');
+  src:  url('../../fonts/LFT.eot?r8og1l#iefix') format('embedded-opentype'),
+    url('../../fonts/LFT.ttf?r8og1l') format('truetype'),
+    url('../../fonts/LFT.woff?r8og1l') format('woff'),
+    url('../../fonts/LFT.svg?r8og1l#LFT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'LFT' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e912";
+}
+.icon-quotation:before {
+  content: "\e911";
+}
+.icon-angle-down:before {
+  content: "\e90f";
+}
+.icon-arrow-right:before {
+  content: "\e910";
+}
+.icon-add-user:before {
+  content: "\e900";
+}
+.icon-artificial-intelligence:before {
+  content: "\e901";
+}
+.icon-crane:before {
+  content: "\e904";
+}
+.icon-team:before {
+  content: "\e90d";
+}
+.icon-brain:before {
+  content: "\e902";
+}
+.icon-cloud-computing:before {
+  content: "\e903";
+}
+.icon-development:before {
+  content: "\e905";
+}
+.icon-first-aid-kit:before {
+  content: "\e906";
+}
+.icon-idea:before {
+  content: "\e907";
+}
+.icon-invention:before {
+  content: "\e908";
+}
+.icon-mortarboard:before {
+  content: "\e909";
+}
+.icon-pencil:before {
+  content: "\e90a";
+}
+.icon-shuttle:before {
+  content: "\e90b";
+}
+.icon-smartphone:before {
+  content: "\e90c";
+}
+.icon-web-programming:before {
+  content: "\e90e";
+}
+
+
+// Base font size
+$base__header__line: 1.25 !default;
+$base__body__line: 1.3 !default;
+$base__font-size: 1rem !default;
+
+// Custom font url
+$font-url: "https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" !default;
+$font-custom: "Barlow" !default;
+$font-condensed: "Barlow Condensed";
+
+
+// Font Declaration
+$font-sans: $font-custom, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  sans-serif;
+$font-primary: $font-sans;
+
+//font-weight
+$fontWeight: (
+  "thin": 100,
+  "extralight": 200,
+  "light": 300,
+  "normal": 400,
+  "medium": 500,
+  "demibold": 600,
+  "bold": bold,
+  "extrabold": 800,
+  "black": 900,
+);
+
+$fontSize: (
+  "header": (
+    "h1": (
+      "font-size": rem(122),
+      "line-height": 98px,
+      "spacing": 0,
+      "font-weight": 600
+    ),
+    "h2": (
+      "font-size": rem(92),
+      "line-height": 72px,
+      "spacing": 0,
+      "font-weight": 600
+    ),
+    "h3": (
+      "font-size": rem(52),
+      "line-height": 46px,
+      "spacing": 0,
+      "font-weight": 600
+    ),
+    "h4": (
+      "font-size": rem(48),
+      "line-height": 44px,
+      "spacing": 0,
+      "font-weight": 500
+    ),
+    "h5": (
+      "font-size": rem(38),
+      "line-height": 38px,
+      "spacing": 0,
+      "font-weight": 500
+    ),
+    "title": (
+      "font-size": rem(28),
+      "line-height": 28px,
+      "spacing": 0,
+      "font-weight": 500
+    )
+  ),
+  "font": (
+    "body1": (
+      "font-size": rem(21),
+      "line-height": 29px,
+    ),
+    "body2": (
+      "font-size": rem(18),
+      "line-height": 26px,
+    ),
+    "body3": (
+      "font-size": rem(16),
+      "line-height": 23px,
+    ),
+    "label": (
+      "font-size": rem(14),
+      "line-height": 23px,
+    ),
+    "small": (
+      "font-size": rem(12),
+      "line-height": 14px,
+    ),
+  ),
+);
+
+$fontDecoration: (
+  "striked": line-through,
+  "underlined": underline,
+);
+
+$fontCase: (
+  "uppercase": uppercase,
+  "lowercase": lowercase,
+  "capitalized": capitalize,
+);
+
+$fontStyle: (
+  "normal": normal,
+  "italic": italic,
+  "oblique": oblique,
+);
+
+$textAlignment: (
+  "center": center,
+  "left": left,
+  "right": right,
+  "justified": justify,
+);
+
+
+@font-face {
+  font-family: 'LFT';
+  src:  url('../fonts/LFT.eot?sbjqto');
+  src:  url('../fonts/LFT.eot?sbjqto#iefix') format('embedded-opentype'),
+    url('../fonts/LFT.ttf?sbjqto') format('truetype'),
+    url('../fonts/LFT.woff?sbjqto') format('woff'),
+    url('../fonts/LFT.svg?sbjqto#LFT') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'LFT' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e903";
+}
+.icon-arrow-long-right:before {
+  content: "\e900";
+}
+.icon-angle-left:before {
+  content: "\e901";
+}
+.icon-angle-right:before {
+  content: "\e907";
+}
+.icon-arrow-left:before {
+  content: "\e908";
+}
+.icon-arrow-right:before {
+  content: "\e909";
+}
+.icon-cross:before {
+  content: "\e902";
+}
+.icon-linkedin:before {
+  content: "\e905";
+}
+.icon-menu:before {
+  content: "\e906";
+}

@@ -1,0 +1,61 @@
+.competencies {
+    &__section {
+        padding: 50px 0 120px;
+        .section {
+            &__title {
+                margin-bottom: 80px;
+            }
+        }
+    }
+    &__content {
+        max-width: 982px;
+        margin: auto;
+        font-size: 18px;
+        font-weight: 500;
+        .title {
+            margin-bottom: 26px;
+        }
+        ul {
+            li {
+                margin-bottom: 0;
+                line-height: 135%;
+            }
+        }
+    }
+    &__list {
+        margin-bottom: 36px;
+    }
+    &__question {
+        position: absolute;
+        bottom: 0;
+        font-size: 15px;
+    }
+    &__item {
+        margin-bottom: 44px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .competencies {
+        &__section {
+            padding-top: 0;
+            padding-bottom: 20px;
+            .section__title {
+                margin-bottom: 48px;
+            }
+        }
+        &__content {
+            .title {
+                font-size: 24px;
+            }
+        }
+        &__list {
+            margin-bottom: 0;
+        }
+        &__question {
+            position: initial;
+            display: block;
+            margin-top: 20px;
+        }
+    }
+}

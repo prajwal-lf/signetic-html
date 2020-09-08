@@ -1,0 +1,81 @@
+.card {
+    background-color: $white;
+    display: block;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    transition: $transition;
+    &__content {
+        padding: 32px;
+    }
+    &__icon {
+        margin-bottom: 18px;
+    }
+    &__title {
+        font-size: 38px;
+        color: $grey-80;
+        margin-bottom: 16px;
+    }
+    &__subtitle {
+        font-size: 18px;
+        color: $grey-70;
+        text-transform: capitalize;
+        display: inline-block;
+        margin-bottom: 16px;
+    }
+    &__text {
+        font-size: 18px;
+        font-weight: 500;
+        color: $grey-90;
+    }
+    &__category {
+        font-size: 16px;
+        font-weight: 600;
+        color: $primary-color;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+    &__horizontal {
+        display: flex;
+        img {
+            flex: 0 0 55%;
+            max-width: 55%;
+        }
+        .card {
+            &__content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 25px 20px 20px;
+            }
+            &__subtitle {
+                font-size: 16px;
+            }
+            &__text {
+                font-size: 20px;
+            }
+        }
+    }
+}
+a.card {
+    border-bottom: 4px solid transparent;
+    height: 100%;
+    &:hover {
+        border-bottom: 4px solid $primary-color;
+        box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.03);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        &__content {
+            padding: 28px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        &__title {
+            font-size: 28px;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+.footer {
+    color: $grey-80;
+    font-weight: 500;
+    padding: 90px 0 70px;
+    &__top {
+        padding-bottom: 28px;
+        border-bottom: 2px solid $grey-40;
+        a {
+            font-weight: 600;
+        }
+    }
+    &__address {
+        margin-bottom: 18px;
+    }
+    &__partner {
+        text-align: right;
+    }
+    &__social {
+        text-align: right;
+        a {
+            margin-left: 18px;
+        }
+    }
+    &__nav {
+        margin-top: 24px;
+        ul {
+            display: flex;
+            li {
+                margin-bottom: 0;
+            }
+            a {
+                margin-right: 42px;
+                color: $grey-70;
+                font-family: $font-condensed;
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                transition: $transition;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    &__social {
+        a {
+            color: $grey-70;
+            transition: $transition;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    .copyright {
+        margin-top: 190px;
+        text-align: center;
+        color: $grey-70;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 70px 0 55px;
+        font-size: 16px;
+        &__partner {
+            text-align: left;
+            margin-top: 50px;
+        }
+        &__nav {
+            margin-top: 48px;
+            ul {
+                flex-direction: column;
+                li {
+                    margin-bottom: 14px;
+                }
+            }
+        }
+        &__social {
+            text-align: left;
+            margin-top: 48px;
+            a {
+                margin-left: 0;
+                margin-right: 18px;
+            }
+        }
+        .copyright {
+            margin-top: 48px;
+            text-align: left;
+        }
+    }
+}
